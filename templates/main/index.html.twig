@@ -1,0 +1,58 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello MainController!{% endblock %}
+
+{% block body %}
+
+<!--
+    Improvement that can be made next :
+        - Making the bouton working by opening a place where
+            you can change the progress bar status.
+        - Make the circle around the participator's get effect
+            like bigger and color change on hover and click.
+        - 
+-->
+
+<wrapper class="first-wrapper">
+    <div class="red-line"></div>
+    <wrapper class="padding-wrapper">
+        <div class="card-header">
+            <div class="title-text">
+                <h1>Taciti eros morbi sapien sir nec ac</h1>
+                <p>Created on  11.02.2016</p>
+            </div>
+            <!-- TODO : faire le design du bouton -->
+            <a class="btn" href="#">
+                <div class="btn-circle">
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+            </a>
+        </div>
+        <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing
+        elit. Deserunt earum molestias nesciunt harum, neque minus
+        repudiandae voluptates alias officia odit quisquam quam,
+        dignissimos iste impedit?</p>
+        <div class="task-bar">
+            <h2>Tasks</h2>
+            <div class="progress-bar-bg">
+                <div class="progress-bar"></div>
+            </div>
+            <h3>43%</h3>
+        </div>
+        <div class="participator-list">
+            <div class="participator-circle">
+                <div class="participator blue"></div>
+            </div>
+            <div class="participator-circle">
+                <div class="participator violet"></div>
+            </div>
+            <div class="participator-circle">
+                <div class="participator green"></div>
+            </div>
+            <div class="participator-circle">
+                <div class="participator red"></div>
+            </div>
+        </div>
+    </wrapper>
+</wrapper>
+{% endblock %}
